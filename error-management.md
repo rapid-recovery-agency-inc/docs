@@ -5,6 +5,7 @@ Error management on the platform should be done using the following guidelines:
 - All Business Services should throw exceptions when an error occurs.
 
 - Business Services or service function should use the following error classes to raise exceptions:
+    * `NotFoundError`: Generic error class for errors related to data not found.
     * `ValidationError`: Generic error class for errors related to data validation.
     * `PermissionError`: Generic error class for errors related to permissions or access to features.
     * `BusinessRuleError`: Generic error class for errors related to business rules.
